@@ -6,7 +6,7 @@
 }
 
 .owl-carousel .owl-stage-outer {
-	max-width:450px;
+	/*max-width:450px; remove this to allow all 4 items to be shown as per the example*/
 	width:100%;
 	margin:0 auto;
 }
@@ -16,8 +16,8 @@
 }
 
 .item {
-	height:300px;
-	max-width:300px;
+	height:375px; /*change to 375px to match the example*/
+	/*max-width:300px; /*remove this to prevent the gray space between items as per the example*/
 	width:100%;
 	/*margin:0 auto;*/
 	display: flex;
@@ -26,7 +26,7 @@
 
 .owl-theme .owl-nav {
 	position: absolute;
-	top:50%;
+	top:40%; /*vertically align nav arrows */
 	left:50%;
 	-webkit-transform:translate(-50%,-50%);
 	transform:translate(-50%,-50%);
@@ -35,11 +35,15 @@
 }
 
 .owl-prev {
-	
+	/*move nav arrow to the outside*/
+	position:absolute;
+	left:0;
 }
 
 .owl-next {
-	
+	/*move nav arrow to the outside*/
+	position:absolute;
+	right:0;
 }
 
 .owl-theme .owl-nav [class*=owl-] {
